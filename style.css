@@ -98,22 +98,30 @@ padding: 5px;
     font-weight: 500;
     text-align: center;
     color: #06a6f0;
+    
 }
 
 .profile-li{
     display: flex;
     align-items: center;
     justify-content: space-between;
-    border-bottom: 3px solid #6d6d6d;
-    list-style: none;
+
+ text-align: center;
+ font-size: 14px;
     padding: 0 10px;
-    margin: 20px;
+    margin:  20px 0;
+}
+.profile-info-li{
+    border-bottom: 5px solid #6d6d6d;
+    list-style: none;
+    width: 25%;
 }
 
- .active{
- 
-    border-bottom: 3px solid green;
+li.active{
+    list-style: none;
+    border-bottom: 5px solid green;
   font-weight: bold;
+  width: 25%;
     
 }
 .profile-img{
@@ -142,20 +150,23 @@ padding: 5px;
 .profile-form{
     display: flex;
 flex-direction: column;
-text-align: center;
+justify-content: center;
+margin: 5px auto;
     
-    margin: 0 auto;
-    width: 60%;
+ width: 60%;
 }
- #first-name, #last-name, #username{
+
+ input#first-name, input#last-name, #username{
     border: 1px solid #6d6d6d;
     margin: 0 auto;
     border-radius: 5px;
-    max-width:  100%;
+    text-align: start;
+   width: 100%;
 
 }
-.first-name, .last-name, .username{
+input.first-name, input.last-name, input.username{
     text-align: start;
+    max-width: 100%;
 }
 .profile-save{
     display: flex;

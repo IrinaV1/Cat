@@ -38,7 +38,15 @@
         </div>
         <div class="navbar-form" role="search"> 
         <input  type="text" placeholder="Search">
-    <button type="submit"><i class="bi bi-bell"></i></button>
+    <button type="submit"><i class="bi bi-bell"></i> <span class="position-absolute top-5 start-90 translate-middle p-1 bg-danger border border-light rounded-circle">
+        <span class="visually-hidden">New alerts</span></button>
+    
+    <button type="button" class="btn btn-light position-relative">
+        <i class="bi bi-bell"></i>
+        <span class="position-absolute top-3 start-90 translate-middle p-2 bg-danger border border-light rounded-circle">
+          <span class="visually-hidden">New alerts</span>
+        </span>
+      </button>
     </div>
    
     <div class="navbar-personal">
@@ -73,10 +81,10 @@
 
     <div class="profile-info">
         <ul class="profile-li">
-            <li class="active">User Info</li>
-            <li>Address</li>
-            <li>Contact</li>
-            <li>Social Networks</li>
+            <li class=" active">User Info</li>
+            <li class="profile-info-li">Address</li>
+            <li class="profile-info-li">Contact</li>
+            <li class="profile-info-li">Social Networks</li>
         </ul>
     
 
@@ -88,7 +96,7 @@
 </div>
 
 
-<form action="" method="get" class="profile-form">
+<form action="#" method="get" class="profile-form">
 <p class="first-name">First Name <span>*</span> <br>
 <input type="text" id="first-name" placeholder="Jack">
 </p>
