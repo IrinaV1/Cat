@@ -1,9 +1,19 @@
-h1 {
-    color: blue;
+html{
+
+    box-sizing: border-box;
+    margin: 0 ;
+    padding: 0;
+    
 }
+*, *::after, *::before {
+    box-sizing: inherit;
+
+   
+}
+
 .container{
     padding: 0 ;
-    margin: 0 ;
+    margin: 10px ;
     background-color: rgb(255, 0, 170);
     width: 1600px;
     height: 700px;
@@ -12,9 +22,9 @@ h1 {
     box-sizing: border-box;
 }
 .wrapper{
-margin: 10px auto;
-padding: 10px auto;
-width: 1000px;
+margin: 0;
+padding: 0;
+
 max-width: 100%;
 box-sizing: border-box;
     background-color: #e2dede;
@@ -25,18 +35,87 @@ box-sizing: border-box;
     
 }
 .header{
-flex-grow: 3;
-max-width: 100%;
-background-color: aquamarine;
+width: 20%;
+min-width: 150px;
+background-color: #fff;
   }
+.header-header{
+    padding: 5px;
+    margin: 5px auto;
+}
+h1{
+    margin: 20px 10px;
+    padding: 10px 10px;
+    font-size: 46px;
+    font-weight: 800;
+    font-family: 'Oleo Script', cursive;  
+    
+
+}
+.header-menu{
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+}
+.header-menu-icon{
+    padding: 5px 10px;
+    margin: 10px 10px;
+}
+
 
 .navbar{
+    padding: 0px;
+    margin: 0;
    max-width: 100%;
-    background-color: blue;
-  
+    background-color: #d5e5e9; 
     
 }
 
+.navbar-header{
+   
+padding: 5px 10px 0;
+    margin: 0 15px;
+}
+
+.navbar-header-ul{
+    font-family: 'Roboto', sans-serif;
+    list-style: none;
+    padding: 0;
+    font-weight: 700;
+    letter-spacing: 0.5px;
+    line-height: 17px;
+}
+li.navbar-header-li{
+    font-size: 10px;
+    font-weight: 500;
+    letter-spacing: -0.5px;
+word-spacing: 1px;
+    color: #817f7f;
+}
+form.navbar-form{
+    position: relative;
+    top: -7px;
+    left: 0px;
+    width: 50%;
+}
+.navbar-input{
+    width: 85%;
+    border: none;
+    border-radius: 5px;
+    height: 30px;
+    background-color: #fff;
+}
+
+.navbar-button{
+    border: none;
+    border-radius: 5px;
+    height: 30px;
+    width: 30px;
+    background-color: #fff;
+    margin: 0 10px;
+}
 .navbar-user{
     width: 50px;
     height: 50px;
@@ -81,13 +160,14 @@ list-style: none;
     margin: 60px auto;
     width: 80%;
     height: 70%;
-    background-color: blanchedalmond;
+    background-color: #fff;
     display: flex;
     justify-content: center;
     border-radius: 10px;
     box-sizing: border-box;
 padding: 5px;
 }
+
 .main-profile-conteiner{
     padding: 10px;
     margin: 10px;
@@ -155,7 +235,9 @@ margin: 5px auto;
     
  width: 60%;
 }
-
+.form-name{
+    color: red;
+}
  input#first-name, input#last-name, #username{
     border: 1px solid #6d6d6d;
     margin: 0 auto;
