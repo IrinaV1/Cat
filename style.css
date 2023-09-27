@@ -1,4 +1,4 @@
-html{
+body{
 
     box-sizing: border-box;
     margin: 0 ;
@@ -28,7 +28,7 @@ padding: 0;
 max-width: 100%;
 box-sizing: border-box;
     background-color: #e2dede;
-    z-index: 100;
+   
     display: flex;
     flex-grow: 1;
     max-height: 100%;
@@ -65,7 +65,9 @@ h1{
 }
 
 
-.navbar{
+div.navbar{
+    display: flex;
+    justify-content: space-around;
     padding: 0px;
     margin: 0;
    max-width: 100%;
@@ -74,9 +76,8 @@ h1{
 }
 
 .navbar-header{
-   
-padding: 5px 10px 0;
-    margin: 0 15px;
+padding: 5px 0px 0;
+    margin: 10px 5px 0 15px;
 }
 
 .navbar-header-ul{
@@ -96,30 +97,75 @@ word-spacing: 1px;
 }
 form.navbar-form{
     position: relative;
-    top: -7px;
-    left: 0px;
-    width: 50%;
+left: 35px;
+
+    width: 55%;
+    margin: 0 5px;
+  
 }
 .navbar-input{
     width: 85%;
     border: none;
     border-radius: 5px;
-    height: 30px;
+    height: 32px;
     background-color: #fff;
+    margin: 0 5px;
 }
 
 .navbar-button{
     border: none;
     border-radius: 5px;
-    height: 30px;
-    width: 30px;
+    height: 32px;
+    width: 32px;
     background-color: #fff;
-    margin: 0 10px;
+    margin: 0 5px;
 }
-.navbar-user{
-    width: 50px;
-    height: 50px;
+
+
+.navbar-personal{
+    display: flex;
+flex-direction: row;
+justify-content: center;
+margin: 0;
+height: 35px;
+}
+.navbar-personal-ul{
+    list-style: none;
+    font-family: 'Roboto', sans-serif;
+   font-size: 14px;
+  padding: 0;
+  margin: 0 10px;
+    color: #028f3c;
+    line-height: 17px;
+    
+}
+.navbar-personal-li{
+
+}
+.navbar-personal-lii{
+    font-weight: 500;
+   
+}
+
+img.navbar-user{
+    width: 32px;
+    height: 32px;
     border-radius: 50%;
+    border: 1px solid  #028f3c;
+
+line-height: 10px;
+}
+.navbar-exit{
+    position: relative;
+    top: 5px;
+    color: #028f3c;
+    font-size: 25px;
+    margin: 0 0px 0 10px;
+    line-height: 17px;
+ 
+}
+.bi-box-arrow-right{
+    height: 30px;
 }
 
 .main-info{
