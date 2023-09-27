@@ -12,21 +12,22 @@ body{
 }
 
 .container{
-    padding: 0 ;
-    margin: 10px ;
-    background-color: rgb(255, 0, 170);
-    width: 1600px;
-    height: 700px;
     display: flex;
     flex-direction: column;
-    box-sizing: border-box;
+    padding: 0px;
+    margin: 0px;
+    background-color: rgb(255, 0, 170);
+    width: 1600px;
+    height: 850px;
+   
+
 }
 .wrapper{
+    box-sizing: inherit;
 margin: 0;
 padding: 0;
 
 max-width: 100%;
-box-sizing: border-box;
     background-color: #e2dede;
    
     display: flex;
@@ -139,9 +140,7 @@ height: 35px;
     line-height: 17px;
     
 }
-.navbar-personal-li{
 
-}
 .navbar-personal-lii{
     font-weight: 500;
    
@@ -177,35 +176,42 @@ height: 600px;
 }
 .wrapper-conteiner{
     max-width: 100%;
-    background-color: blueviolet;
+    background-color:  #d5e5e9;
     flex-grow: 9;
 }
 .menu{
-margin: 0;
-padding: 0;
-
+margin: 0 0px;
+padding: 0 15px;
+background-color: #d5e5e9;
+font-family: 'Roboto', sans-serif;
+font-size: 12px;
+font-weight: 400;
 }
-.memu-link{
+.menu-link{
     display: flex;
     justify-content: flex-start;
 list-style: none;
-
-
+padding: 0;
+margin: 0;
 }
 .menu-link-user{
     color: inherit;
     text-decoration: none;
-    padding: 0 5px;
+    padding: 0px;
+    margin: 0 5px;
+    color: #6d6d6d;
 }
 .menu-link-a{
-    padding: 0 5px;
-    text-decoration: none;    
+    padding: 0px;
+    text-decoration: none; 
+    margin: 0 5px;
+    color: #06a6f0;   
 }
 
 .main-profile{
     margin: 60px auto;
     width: 80%;
-    height: 70%;
+    height: 60%;
     background-color: #fff;
     display: flex;
     justify-content: center;
@@ -238,14 +244,14 @@ padding: 5px;
     margin:  20px 0;
 }
 .profile-info-li{
-    border-bottom: 5px solid #6d6d6d;
+    border-bottom: 3px solid #a7a4a4;
     list-style: none;
     width: 25%;
 }
 
 li.active{
     list-style: none;
-    border-bottom: 5px solid green;
+    border-bottom: 3px solid green;
   font-weight: bold;
   width: 25%;
     
@@ -262,15 +268,16 @@ li.active{
     border-radius: 50%;
  border: 2px solid #06a6f0;
 }
-.profile-buttom{
+.profile-button{
     display: flex;
     align-items: center ;
     justify-content: center;
     background-color: #06a6f0;
     color: #fff;
+    font-size: 12px;
     border: none;
     border-radius: 5px;
-    padding: 0;
+    padding: 5px 10px;
     margin: 5px auto;
 }
 .profile-form{
@@ -285,7 +292,7 @@ margin: 5px auto;
     color: red;
 }
  input#first-name, input#last-name, #username{
-    border: 1px solid #6d6d6d;
+    border: 1px solid #a7a4a4;
     margin: 0 auto;
     border-radius: 5px;
     text-align: start;
