@@ -17,26 +17,23 @@ margin: 0 ;
     padding: 0 -12px;
     margin: 0px -12px;
     background-color: rgb(255, 0, 170);
-    width: 1600px;
+
     height: 850px;
    
 
 }
+
 .wrapper{
     box-sizing: inherit;
-
-
-max-width: 100%;
     background-color: #e2dede;
    
     display: flex;
     flex-grow: 1;
-    max-height: 100%;
+
     
 }
 .header{
-width: 20%;
-min-width: 150px;
+width: 150px;
 background-color: #fff;
 
   }
@@ -96,16 +93,17 @@ li.navbar-header-li{
 word-spacing: 1px;
     color: #817f7f;
 }
-form.navbar-form{
-    position: relative;
-left: 35px;
 
-    width: 55%;
+.navbar-form{
+justify-content: end;
+    text-align: end;
+
+    width: 450px;
     margin: 0 5px;
   
 }
 .navbar-input{
-    width: 85%;
+    width: 330px;
     border: none;
     border-radius: 5px;
     height: 32px;
@@ -209,9 +207,9 @@ margin: 0;
 }
 
 .main-profile{
-    margin: 60px auto;
-    width: 80%;
-    height: 60%;
+    margin: 40px auto;
+    width: 600px;
+    height: 430px;
     background-color: #fff;
     display: flex;
     justify-content: center;
@@ -221,8 +219,8 @@ padding: 5px;
 }
 
 .main-profile-conteiner{
-    padding: 10px;
-    margin: 10px;
+    padding: 0px;
+    margin: 0px auto;
     width: 100%;
 }
 .profile{
@@ -230,7 +228,7 @@ padding: 5px;
     font-weight: 500;
     text-align: center;
     color: #06a6f0;
-    
+    margin-top: 5px;
 }
 
 .profile-li{
@@ -241,12 +239,17 @@ padding: 5px;
  text-align: center;
  font-size: 14px;
     padding: 0 10px;
-    margin:  20px 0;
+    margin:  10px 0 15px;
+}
+.profile-info{
+    margin: 0 auto 5px;
 }
 .profile-info-li{
     border-bottom: 3px solid #a7a4a4;
     list-style: none;
-    width: 25%;
+
+    
+    width: calc(100%/4);
 }
 
 li.active{
@@ -260,13 +263,13 @@ li.active{
     display: flex;
     align-items: center;
     justify-content: center;
-    padding: 10px;
+    padding: 5px;
 }
 .profile-img-user{
     width: 60px;
     height: 60px;
     border-radius: 50%;
- border: 2px solid #06a6f0;
+ border: 3px solid #06a6f0;
 }
 .profile-button{
     display: flex;
@@ -277,16 +280,17 @@ li.active{
     font-size: 12px;
     border: none;
     border-radius: 5px;
-    padding: 5px 10px;
-    margin: 5px auto;
+    padding: 5px;
+    margin: 5px auto 10px;
 }
 .profile-form{
+    box-sizing: border-box;
     display: flex;
 flex-direction: column;
 justify-content: center;
-margin: 5px auto;
-    
- width: 60%;
+margin: 10px auto;
+    font-size: 12px;
+ width: 300px;
 }
 .form-name{
     color: red;
@@ -296,13 +300,13 @@ margin: 5px auto;
     margin: 0 auto;
     border-radius: 5px;
     text-align: start;
-   width: 100%;
+   width: 300px;
+
+
 
 }
-input.first-name, input.last-name, input.username{
-    text-align: start;
-    max-width: 100%;
-}
+
+
 .profile-save{
     display: flex;
     align-items: center;
