@@ -368,19 +368,41 @@ input#last-name,
 @media(max-width: 1199px) {}
 
 @media(max-width: 991px) {
-    .wrapper{
-      flex-grow: 1fr;  
-       
+   /* .container {
+        display: flex;
+        flex-direction: column;
+        padding: 0;
+        margin: 0px;
+        background-color: rgb(255, 0, 170);
+    
+        height: 850px;
+    
+    
+    }*/
+    
+    .wrapper {
+       /* box-sizing: inherit;*/
+    
+     /*  display: flex;
+        flex-grow: 1;*/
+     /*   display: grid;*/
+    
     }
-
-    .navbar-form {
+.header-header{
+   /* display: grid;
+    grid-template-columns: 1;
+    flex-direction: column;
+    justify-content: flex-start;*/
+    
+}
+  /*  .navbar-form {
         display: flex;
         justify-content: flex-start;
 
         margin: 0;
         padding: 0 10px;
         width: 400px;
-    }
+    }*/
 
     .navbar-personal {
         padding: 0 10px;
@@ -396,6 +418,20 @@ input#last-name,
 }
 
 @media(max-width: 767px) {
+    .container {
+        display: flex;
+        flex-direction: column;
+        padding: 0;
+        margin: 0px;
+        background-color: rgb(255, 0, 170);
+    
+        height: 850px;
+    
+    
+    }
+    .wrapper{
+        display: grid;
+    }
     .navbar {
         display: flex;
         justify-content: flex-start;
@@ -439,7 +475,7 @@ input#last-name,
 }
 
 @media(max-width: 575px) {
-    .navbar-form {
+  /*  .navbar-form {
         display: flex;
         justify-content: flex-start;
 
@@ -449,12 +485,12 @@ input#last-name,
         margin: 5px 5px;
 
     }
+*/
 
-
-    .wrapper {
+   .wrapper {
     
         display: grid;
-        grid-template-rows: max-content;
+     
 
 
     
@@ -504,5 +540,5 @@ input#last-name,
 }
 
 @media(max-width: 414px) {
-
+    
 }
