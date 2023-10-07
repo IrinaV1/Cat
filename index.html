@@ -18,10 +18,10 @@
 </head>
 
 <body>
-    <div class=" container-fluid  p-0 m-0  ">
-        <div class="wrapper container-fluid   p-0 ">
+    <div class=" container-fluid min-vh-100 p-0 m-0  ">
+        <div class="wrapper container-fluid min-vh-100 m-0 p-0 ">
 
-            <nav class="header col-md-3  col-lg-2 navbar navbar-expand-md bg-body-tertiary d-md-inline-block">
+            <nav class="header  col-md-3  col-lg-2 navbar navbar-expand-md bg-body-tertiary ms-0 me-0 d-md-inline-block">
                 <div class="header-header p-0 container-fluid d-md-block">
                     
                     <a class="navbar-brand" href="#">
@@ -32,7 +32,7 @@
                         <span class="navbar-toggler-icon"></span>  
                     </button>        
                     
-                    <div class=" header-header collapse navbar-collapse m-0 p-0" id="navbarTogglerDemo02">
+                    <div class=" header-header collapse container-fluid navbar-collapse min-vh-md-100 m-0 p-0" id="navbarTogglerDemo02">
                    
                        
 
@@ -69,9 +69,9 @@
             
 
 
-            <div class="wrapper-conteiner container-fluid  p-0 mt-0">
+            <div class="wrapper-conteiner container-fluid min-vh-100  p-0 mt-0">
 
-                <div class="navbar row " style="--bs-gap: .5rem;">
+                <div class="navbar row ms-lg-3" style="--bs-gap: .5rem;">
 
                     <div class="navbar-header col-3 col-lg-3">
                         <ul class="navbar-header-ul">
@@ -92,9 +92,9 @@
                     </form>
 
                     <div class="navbar-personal col-3 col-lg-2">
-                        <div class="row">
+                        <div class="row g-lg-3 pe-0 me-1">
                             <div class="col-5">
-                                <ul class="navbar-personal-ul">
+                                <ul class="navbar-personal-ul ">
                                     <li class="navbar-personal-li">Jack</li>
                                     <li class="navbar-personal-lii">Douglas</li>
                                 </ul>
@@ -118,7 +118,7 @@
 
 
 
-                <div class="menu">
+                <div class="menu mb-5">
 
                     <ul class="menu-link">
                         <li> <a class="menu-link-a" href="#">Home</a>/</li>
@@ -134,12 +134,12 @@
 
 
 
-                <main class="main-profile col-xxl-9 col-md-10">
-                    <div class="main-profile-conteiner ">
-                        <div class="profile">Profile</div>
+                <main class="main-profile container-fluid min-vh-80   mt-sm-auto pt-3 p-0 col-sm-11  col-xxl-9 col-md-10">
+                    <div class="main-profile-container mt-3 h-50 ">
+                        <div class="profile ">Profile</div>
 
-                        <div class="profile-info comtainer-md ">
-                            <ul class="profile-li">
+                        <div class="profile-info container-md ">
+                            <ul class="profile-li ">
                                 <li class=" active">User Info</li>
                                 <li class="profile-info-li">Address</li>
                                 <li class="profile-info-li">Contact</li>
@@ -155,18 +155,18 @@
                         </div>
 
 
-                        <form action="#" method="get" class="profile-form">
-                            <p class="first-name">First Name <span class="form-name">*</span>
-                                <input type="text" id="first-name" placeholder=" Jack">
-                            </p>
-                            <p class="last-name">Last Name <span class="form-name">*</span>
-                                <input type="text" id="last-name" placeholder=" Douglas">
-                            </p>
-                            <p class="username">
-                                Username <br>
-                                <input type="text" id="username" placeholder=" JackD">
-                            </p>
-                            <button class="profile-save">Save</button>
+                        <form action="#" method="get" class="profile-form  row-cols-lg-9 ">
+                            <p class="first-name ps-2 pb-0 mt-3 mb-1"> First Name <span class="form-name">*</span> </p>
+                                <input type="text" class="form-control ps-1" id="first-name" placeholder=" Jack">
+                           
+                            <p class="last-name ps-2 pb-0 mt-3 mb-1">Last Name <span class="form-name">*</span></p>
+                                <input type="text" class="form-control w-100 " id="last-name" placeholder=" Douglas">
+                            
+                            <p class="username ps-2 pb-0 mt-3 mb-1">
+                                Username </p>
+                                <input type="text" class="form-control" id="username" placeholder=" JackD">
+                            
+                            <button class="profile-save mt-4">Save</button>
 
                         </form>
 
