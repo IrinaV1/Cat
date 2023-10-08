@@ -138,9 +138,8 @@ li.navbar-header-li {
 
 
 .navbar-personal {
-    display: flex;
-    justify-content: flex-start;
-
+    
+box-sizing: border-box;
     margin: 0 auto;
     padding: 0 5px;
     height: 35px;
@@ -279,7 +278,7 @@ min-height: 100%;
     border-bottom: 3px solid #a7a4a4;
     list-style: none;
 
-
+word-spacing: -0.5px;
     width: calc(100%/4);
 }
 
@@ -311,10 +310,10 @@ li.active {
     justify-content: center;
     background-color: #06a6f0;
     color: #fff;
-    font-size: 14px;
+    font-size: 16px;
     border: none;
-    border-radius: 5px;
-    padding: 5px;
+    border-radius: 7px;
+    padding: 5px 10px;
     margin: 5px auto 10px;
 }
 
@@ -353,9 +352,12 @@ input#last-name,
     background-color: #06a6f0;
     color: #fff;
     border: none;
-    border-radius: 5px;
-    padding: 5px 55px;
-    margin: 5px auto;
+    border-radius: 7px;
+    font-size: 16px;
+               padding: 5px 75px;
+               margin: 5px auto;
+
+
 }
 
 @media(max-width: 1399px) {}
@@ -371,16 +373,9 @@ input#last-name,
 
 @media(max-width: 991px) {
     .container {
-       /* display: flex;
-        flex-direction: column;
-        padding: 0;
-        margin: 0px;
-        background-color: rgb(255, 0, 170);*/
-    
         height: 100%;
-    
-    
     }
+  
     .profile-li {
          
         font-size: 16px;
@@ -392,21 +387,7 @@ input#last-name,
      
         margin: 0 10px;
     }
-    /*.wrapper {
-        box-sizing: inherit;*/
-    
-     /*  display: flex;
-        flex-grow: 1;*/
-     /*   display: grid;
-    
-    }*/
-/*.header-header{
-    display: grid;
-    grid-template-columns: 1;
-    flex-direction: column;
-    justify-content: flex-start;
-    
-}*/
+
   /*  .navbar-form {
         display: flex;
         justify-content: flex-start;
@@ -473,7 +454,7 @@ input#last-name,
     }
 
     .navbar-input {
-        width: 345px;
+    
         height: 32px;
 
         margin: 2px 0px;
@@ -488,6 +469,7 @@ input#last-name,
         margin: 2px 5px;
 
     }
+   
     .header-menu {
         display: flex;
         justify-content: space-around;
@@ -502,64 +484,32 @@ input#last-name,
         .header-menu-icon {
             padding: 5px 5px 6px;
             margin: 6px 5px;
-            text-align: start;
-     
+            text-align: center;
+     height: 100%;
         }
         .profile-li {
          
             font-size: 14px;
             padding: 0px;
-            margin: 10px 0 15px;
+            margin: 10px 10px 15px;
+        }
+        .profile-form {
+           
+            width: 70%;
         }
 }
 
 @media(max-width: 575px) {
-  /*  .navbar-form {
-        display: flex;
-        justify-content: flex-start;
+  
 
-        text-align: end;
-
-        width: 300px;
-        margin: 5px 5px;
-
-    }
-*/
-
- /*  .wrapper {
-    
-        display: grid;
-    }*/
-    
-    
-    .header-header {
-        padding: 10px 5px;
-        margin: 10px 5px;
-    
-      
-      
-    }
     
     .img-header {
-        margin: 10px auto;
-        height: 30vh;
-    
-    
+        margin: 0px auto;
+        height: 45vh;
     }
     
    
     
-    .header-menu {
-        display: flex;
-        justify-content: space-around;
-     
-    height: auto;
-        margin: 5px auto;
-        font-size: 24px;
-        padding: 10px 10px;
-
-     text-align: start;
-    }
     
     .header-menu-icon {
         padding: 5px 5px 6px;
@@ -573,8 +523,45 @@ input#last-name,
         padding: 0px;
         margin: 10px 0 15px;
     }
+    .profile-form {
+       
+        width: 75%;
+    }
+    .profile-save {
+    
+        font-size: 18px;
+               padding: 10px 65px;
+               margin: 5px auto;
+           }
 }
 
 @media(max-width: 414px) {
     
+    
+    .profile-li {
+  
+  
+        text-align: center;
+        font-size: 14px;
+    letter-spacing: -0.5px;
+    
+    }  
+    .profile-form {
+       
+        width: 80%;
+    }
+    .profile-save {
+    
+ font-size: 18px;
+        padding: 10px 75px;
+        margin: 15px auto;
+    }
+    .profile-button {
+       
+        font-size: 16px;
+   
+        border-radius: 7px;
+        padding: 10px 10px;
+        margin: 10px auto 10px;
+    }
 }
