@@ -362,7 +362,12 @@ input#last-name,
 
 }
 
-@media(max-width: 1399px) {}
+@media(max-width: 1399px) {
+    .navbar{
+        display: flex;
+        flex-wrap: 1fr 4fr 1fr;
+    }
+}
 
 @media(max-width: 1199px) {
     .profile-li {
@@ -433,10 +438,10 @@ min-width: 100%;
     .navbar {
         display: flex;
         flex-wrap: nowrap;
-        justify-content: space-between;
+        justify-content: space-around;
     
       
-        margin: 0 5px;
+        margin: 0 au;
     }
     .navbar-collapse{
      min-height: 90vh;
@@ -462,14 +467,15 @@ width: 50%;
     }
     .navbar-personal-ul{
       width: 30% ;
+   
     }
 
     .navbar-input {
     
         height: 32px;
-
+align-items: flex-start;
         margin: 2px 0px;
-min-width: 100%;
+min-width: 90%;
     }
 
     .navbar-button {
